@@ -12,8 +12,7 @@ function App() {
     <div>
       <h1>Full Name Display</h1>
       <form onSubmit={handleSubmit}>
-        <div>
-          <div>
+        
             First Name:
             <input
               value={first}
@@ -21,8 +20,8 @@ function App() {
               onChange={(e) => setFirst(e.target.value)}
               required
             />
-          </div>
-          <div>
+          <br/>
+          
             Last Name:
             <input
               value={last}
@@ -30,11 +29,10 @@ function App() {
               onChange={(e) => setLast(e.target.value)}
               required
             />
-          </div>
-          <div>
+          
+          <br/>
             <button type="submit">Submit</button>
-          </div>
-        </div>
+        
         <div>
           {fullName}
         </div>
